@@ -1,0 +1,216 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: transform var(--ease), background-color var(--ease), color var(--ease), border-color var(--ease);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(120deg, var(--gold-soft), var(--champagne));
+  color: #1b1b1b;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: linear-gradient(120deg, #c9ab78, #e5d0ad);
+}
+
+.btn-ghost {
+  border-color: rgba(247, 242, 232, 0.4);
+  color: var(--ivory);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible {
+  border-color: rgba(247, 242, 232, 0.7);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 60;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+}
+
+.brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.site-nav a {
+  color: rgba(247, 242, 232, 0.85);
+  transition: color var(--ease);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--champagne);
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(247, 242, 232, 0.3);
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--ivory);
+}
+
+.pill {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  font-size: 0.67rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.quote-slider {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.slider-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--ivory);
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.slider-btn:hover,
+.slider-btn:focus-visible {
+  border-color: var(--champagne);
+  color: var(--champagne);
+}
+
+.slide {
+  display: none;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  line-height: 1.35;
+}
+
+.slide.is-active {
+  display: block;
+}
+
+.slide cite {
+  display: block;
+  margin-top: 1rem;
+  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--champagne);
+  letter-spacing: 0.03em;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 520px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--ivory);
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(247, 242, 232, 0.7);
+}
+
+.newsletter-form input:focus-visible,
+.menu-toggle:focus-visible,
+.btn:focus-visible,
+.slider-btn:focus-visible,
+.site-nav a:focus-visible {
+  outline: 2px solid var(--champagne);
+  outline-offset: 2px;
+}
+
+@media (max-width: 880px) {
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 1rem;
+    width: min(300px, 82vw);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: none;
+    flex-direction: column;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
