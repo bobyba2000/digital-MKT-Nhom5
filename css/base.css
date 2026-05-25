@@ -1,12 +1,12 @@
 :root {
-  --black: #0d0d0d;
-  --ink: #1b1b1b;
-  --ivory: #f7f2e8;
-  --champagne: #d9c4a0;
-  --gold-soft: #b89c69;
-  --smoke: #8b877e;
+  --black: #1f1712;
+  --ink: #2c231d;
+  --ivory: #fffaf2;
+  --champagne: #d2b485;
+  --gold-soft: #b88e56;
+  --smoke: #7f6d5d;
   --white: #ffffff;
-  --surface: #141414;
+  --surface: #ffffff;
   --radius: 1.25rem;
   --radius-sm: 0.75rem;
   --shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
@@ -37,11 +37,11 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--ivory);
+  color: var(--ink);
   background:
-    radial-gradient(circle at 85% 10%, rgba(184, 156, 105, 0.14), transparent 30%),
-    radial-gradient(circle at 10% 70%, rgba(255, 255, 255, 0.08), transparent 35%),
-    var(--black);
+    radial-gradient(circle at 85% 8%, rgba(210, 180, 133, 0.24), transparent 34%),
+    radial-gradient(circle at 12% 68%, rgba(255, 255, 255, 0.9), transparent 46%),
+    linear-gradient(to bottom, rgba(255, 245, 230, 0.7), rgba(255, 255, 255, 0.95));
   line-height: 1.6;
 }
 
@@ -86,7 +86,7 @@ p {
   text-transform: uppercase;
   font-size: 0.72rem;
   letter-spacing: 0.2em;
-  color: var(--champagne);
+  color: #8f6a3d;
   margin-bottom: var(--space-2);
 }
 
@@ -99,7 +99,7 @@ p {
 }
 
 .lead {
-  color: rgba(247, 242, 232, 0.88);
+  color: rgba(255, 245, 230, 0.96);
   max-width: 56ch;
 }
 

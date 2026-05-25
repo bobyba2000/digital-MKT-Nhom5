@@ -22,13 +22,14 @@ main {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.78)),
-    radial-gradient(circle at 15% 35%, rgba(184, 156, 105, 0.25), transparent 40%);
+    linear-gradient(to bottom, rgba(35, 23, 17, 0.16), rgba(35, 23, 17, 0.58)),
+    radial-gradient(circle at 15% 35%, rgba(255, 235, 198, 0.3), transparent 44%);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  color: var(--ivory);
 }
 
 .hero h1 {
@@ -45,7 +46,7 @@ main {
 }
 
 .section-collection {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), transparent 40%);
+  background: linear-gradient(to bottom, rgba(255, 243, 220, 0.45), rgba(255, 255, 255, 0.4));
 }
 
 .product-grid {
@@ -55,17 +56,17 @@ main {
 }
 
 .product-card {
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(44, 35, 29, 0.14);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.95);
   transition: transform var(--ease), border-color var(--ease);
 }
 
 .product-card:hover,
 .product-card:focus-within {
   transform: translateY(-5px);
-  border-color: rgba(217, 196, 160, 0.55);
+  border-color: rgba(184, 142, 86, 0.45);
 }
 
 .product-card img {
@@ -91,7 +92,7 @@ main {
 
 .product-meta p {
   font-size: 0.95rem;
-  color: rgba(247, 242, 232, 0.82);
+  color: rgba(44, 35, 29, 0.78);
 }
 
 .story-grid {
@@ -126,7 +127,7 @@ main {
 
 .ritual-image img {
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(44, 35, 29, 0.16);
 }
 
 .ritual-steps {
@@ -142,7 +143,7 @@ main {
 }
 
 .ritual-steps p {
-  color: rgba(247, 242, 232, 0.84);
+  color: rgba(44, 35, 29, 0.82);
 }
 
 .showcase-list {
@@ -155,8 +156,8 @@ main {
   grid-template-columns: 1.05fr 1fr;
   gap: 1.2rem;
   align-items: center;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(44, 35, 29, 0.14);
   border-radius: var(--radius-sm);
   padding: 1rem;
 }
@@ -189,10 +190,10 @@ main {
   grid-template-columns: 1.1fr 1fr;
   gap: 1.3rem;
   align-items: center;
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(130deg, rgba(255, 245, 225, 0.74), rgba(255, 255, 255, 0.92));
   border-radius: var(--radius);
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(44, 35, 29, 0.14);
 }
 
 .campaign-card img {
@@ -208,7 +209,7 @@ main {
 
 .campaign-copy p {
   margin-bottom: 1.2rem;
-  color: rgba(247, 242, 232, 0.86);
+  color: rgba(44, 35, 29, 0.82);
 }
 
 .section-testimonials {
@@ -221,12 +222,12 @@ main {
   align-items: center;
   justify-content: space-between;
   grid-template-columns: 1fr auto;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(44, 35, 29, 0.14);
   border-radius: var(--radius);
   padding: clamp(1rem, 3vw, 2rem);
   background:
-    radial-gradient(circle at 85% 12%, rgba(184, 156, 105, 0.2), transparent 40%),
-    rgba(255, 255, 255, 0.03);
+    radial-gradient(circle at 85% 12%, rgba(210, 180, 133, 0.26), transparent 42%),
+    rgba(255, 255, 255, 0.95);
 }
 
 .newsletter-box h2 {
@@ -235,7 +236,7 @@ main {
 
 .site-footer {
   padding-block: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(44, 35, 29, 0.16);
 }
 
 .footer-grid {

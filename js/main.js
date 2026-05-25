@@ -20,9 +20,9 @@ const header = document.querySelector('.site-header');
 window.addEventListener('scroll', () => {
   if (!header) return;
   if (window.scrollY > 40) {
-    header.style.background = 'rgba(0, 0, 0, 0.68)';
+    header.style.background = 'rgba(255, 251, 245, 0.94)';
   } else {
-    header.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0))';
+    header.style.background = 'linear-gradient(to bottom, rgba(255, 250, 242, 0.9), rgba(255, 250, 242, 0))';
   }
 });
 
